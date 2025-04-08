@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/Proj/static/css/main.b5cc6ff8.css",
+    "main.js": "/Proj/static/js/main.bcd87fe9.js",
+    "static/js/453.7b9a895e.chunk.js": "/Proj/static/js/453.7b9a895e.chunk.js",
+    "static/media/AdobeStock_84334319-resize.jpeg": "/Proj/static/media/AdobeStock_84334319-resize.75f2ab688da26d79fa49.jpeg",
+    "index.html": "/Proj/index.html",
+    "main.b5cc6ff8.css.map": "/Proj/static/css/main.b5cc6ff8.css.map",
+    "main.bcd87fe9.js.map": "/Proj/static/js/main.bcd87fe9.js.map",
+    "453.7b9a895e.chunk.js.map": "/Proj/static/js/453.7b9a895e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b5cc6ff8.css",
+    "static/js/main.bcd87fe9.js"
+  ]
+}
