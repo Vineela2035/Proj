@@ -1,0 +1,823 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .header {
+    display: flex;
+    align-items: center;
+    gap: 20px; 
+  }
+  
+  .logo {
+    max-width: 70px; 
+    height: auto;
+    border-radius: 50%;
+    border: 2px solid #4CAF50;/*added border to logo*/
+  }
+  /*changed the color theme of home-page*/
+  /* Navbar Styling */
+  /* Navigation Bar Styles */
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 25px;
+    background-color: #003200;
+    font-weight: bold;
+    color: white;
+    flex-wrap: nowrap; /* Ensures all components appear side by side */
+  }
+  
+  /* Navigation Links */
+  .navbar nav {
+    display: flex;
+    gap: 20px;
+    position: relative;
+    flex-wrap: nowrap; /* Prevents wrapping */
+  }
+  
+  .navbar nav a {
+    text-decoration: none;
+    color: #F0FFF0;
+    padding: 10px 15px;
+    font-size: 1.2rem;
+    border-radius: 20px;
+    transition: background-color 0.3s ease, padding 0.2s ease;
+  }
+  
+  .navbar nav a:hover {
+    background-color: #e1991d;
+    border-radius: 12px;
+    padding: 12px 18px;
+  }
+  
+  /* Dropdown Styling */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #003200;
+    min-width: 180px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    z-index: 10;
+    padding: 5px 0;
+    left: 0;
+  }
+  
+  /* Dropdown Links */
+  .dropdown-content a {
+    color: #F0FFF0;
+    padding: 10px 18px;
+    text-decoration: none;
+    display: block;
+    font-size: 1rem;
+    white-space: nowrap;
+    transition: background-color 0.3s ease, padding 0.2s ease;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #e1991d;
+    padding-left: 25px;
+  }
+  
+  /* Show dropdown on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  /* Responsive Styling for Mobile */
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      align-items: center;
+      padding: 10px;
+    }
+  
+    .navbar nav {
+      flex-direction: column;
+      align-items: center;
+      gap: 15px;
+    }
+  
+    .dropdown-content {
+      min-width: 100%;
+      text-align: center;
+    }
+  }   
+
+  .container {
+    display: flex;
+  }
+  
+  
+  .sidebar a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+    margin-bottom: 10px;
+    background: #ddd;
+    border-radius: 5px;
+  }
+  
+  .sidebar a:hover {
+    background: #ccc;
+  }
+  
+  .page-container {
+    margin-left: 270px;
+    width: 100%;
+    padding: 20px;
+  }
+  
+  /* Added dropdown in navigation bar */
+  
+  .hero {
+    background: url('../public/images/AdobeStock_84334319-resize.jpeg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    padding: 20px;
+  }
+  
+  .hero h1 {
+    font-size: 5rem;
+    text-shadow: 3px 3.5px 5px rgba(0, 0, 0, 0.7);
+  }
+  
+  .hero button {
+    padding: 10px 20px;
+    background: #003200;
+    border: none;
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+  }
+  
+  .hero button:hover {
+    background: #e1991d;
+  }
+  
+  .about-section {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .about-section h2 {
+    color: #004d00;
+    font-size: 1.8rem;
+  }
+  
+  .about-section p {
+    font-size: 1rem;
+    margin: 10px auto;
+    max-width: 600px;
+  }
+  /*aligned the 2 divisions  to a single row*/
+  .equipment-section {
+    padding: 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  
+  .equipment-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+  }
+  
+  .equipment-card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .equipment-card button {
+    margin-top: 10px;
+    padding: 8px 15px;
+    background: #003200;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+  }
+    
+  .equipment-card button:hover {
+    background: #e1991d;
+  }
+  
+  .equipment-receive {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+  }
+  
+  .equipment-receive:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .equipment-receive button {
+    margin-top: 10px;
+    padding: 8px 15px;
+    background: #003200;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+  }
+  
+  .equipment-receive button:hover {
+    background: #e1991d;
+  }
+
+  .form-container {
+    width: 90%;
+    max-width: 400px;
+    background: white;
+    padding: 20px;
+    margin: 40px auto;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+
+  .form-container h2 {
+      color: #003200;
+      margin-bottom: 15px;
+  }
+
+  /* Input Fields */
+  input[type="text"],
+  input[type="date"],
+  input[type="tel"],
+  select {
+      width: calc(100% - 20px);
+      padding: 10px;
+      margin: 8px 0;
+      border: 2px solid #ccc;
+      border-radius: 5px;
+      font-size: 16px;
+      transition: border 0.3s;
+  }
+
+  input[type="text"]:focus,
+  input[type="date"]:focus,
+  input[type="tel"]:focus,
+  select:focus {
+      border-color: #003200;
+      outline: none;
+  }
+
+  /* Submit Button */
+  .submit-button {
+      background-color: #003200;
+      color: white;
+      border: none;
+      padding: 8px 15px;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 5px;
+      transition: background 0.3s;
+  }
+
+  .submit-button:hover {
+      background-color: #e1991d;
+  }
+  .equipment-container {
+    width: 90%;
+    max-width: 600px;
+    background: white;
+    padding: 20px;
+    margin: 40px auto;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+
+  .equipment-container h2 {
+      color: #003200;
+      margin-bottom: 15px;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+  }
+
+  th, td {
+      border: 1px solid #ddd;
+      padding: 10px;
+      text-align: center;
+  }
+
+  th {
+      background-color: #003200;
+      color: white;
+  }
+
+  /* Rent Now Button */
+  .rent-now-btn {
+      background-color: #003200;
+      color: white;
+      border: none;
+      padding: 8px 12px;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 5px;
+      transition: background 0.3s;
+  }
+
+  .rent-now-btn:hover {
+      background-color: #e1991d;
+  }
+    
+  .Produce {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    margin-bottom: 0.75rem;
+  }
+  
+  .Produce:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .Produce button {
+    margin-top: 10px;
+    padding: 8px 15px;
+    background: #003200;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+  }
+  
+  .Produce button:hover {
+    background: #e1991d;
+  }
+  /* Local Produce Container */
+  .local-produce-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 10px;
+    gap: 10px;
+  }
+
+  /* Left Side: Category List */
+  .category-list {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 220px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    background-color: #f1f1f1;
+  }
+
+  .category-button {
+    background-color: #003200;
+    color: white;
+    border: none;
+    padding: 8px;
+    font-size: 14px;
+    text-align: left;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    width: 100%;
+  }
+
+  .category-button:hover {
+    background-color: #e1991d;
+  }
+
+  /* Right Side: Information Section */
+  .category-info {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 5px;
+    width: 500px;
+    white-space: pre-line;
+  }
+
+  /* Ensure heading and table alignment */
+  .category-info h3 {
+    color: #003200;
+    margin-bottom: 10px; /* Adds space below heading */
+    text-align: center; /* Centers the heading */
+  }
+
+  /* Styling the Table */
+  .category-info table {
+    width: 100%; /* Ensures table takes full width */
+    border-collapse: collapse; /* Removes double borders */
+    margin-top: 10px; /* Ensures spacing below the heading */
+    border-radius: 8px; /* Rounded corners */
+    overflow: hidden; /* Ensures rounded corners apply properly */
+  }
+
+  /* Table Borders */
+  .category-info table, 
+  .category-info th, 
+  .category-info td {
+    border: 1px solid #ddd;
+  }
+
+  /* Table Header */
+  .category-info th {
+    background-color: #003200;
+    color: white;
+    padding: 10px;
+    text-align: left;
+  }
+
+  /* Table Rows */
+  .category-info td {
+    padding: 8px;
+    background-color: #f9f9f9;
+  }
+
+  /* Alternating Row Colors */
+  .category-info tr:nth-child(even) {
+    background-color: #e7f3e7;
+  }
+
+    
+  /*aligned the 2 divisions  to a single row*/
+  .info-section {
+    padding: 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+    gap: 20px;
+  }
+  
+  .info-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+  }
+  
+  .info-card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .info-card button {
+    margin-top: 10px;
+    padding: 8px 15px;
+    background: #003200;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+  }
+  
+  .info-card button:hover {
+    background: #e1991d;
+  }
+  
+  .Market {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    margin-bottom: 12px;
+  }
+  .Market:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+  }
+  
+  .Market button {
+    margin-top: 10px;
+    padding: 8px 15px;
+    background: #003200;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+  }
+  
+  .Market button:hover {
+    background: #e1991d;
+  }
+  .market-container {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .market-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .market-card {
+    background: #eef2ff;
+    padding: 15px;
+    border-radius: 8px;
+    width: 280px;
+    text-align: center;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .compare-btn {
+    background-color: #003200;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  
+  .agri-section {
+    padding: 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+    gap: 20px;
+  }
+  /*aligned the 2 divisions  to a single row*/
+  .agri-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+  }
+  
+  .agri-card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .agri-card button {
+    margin-top: 10px;
+    padding: 8px 15px;
+    background: #003200;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+  }
+  
+  .agri-card button:hover {
+    background: #e1991d;
+  }
+  .chart-container {
+    width: 400px; /* Smaller Width */
+    height: 300px; /* Smaller Height */
+    margin: auto;
+  }
+  
+  .small-chart {
+    width: 100% !important;
+    height: 100% !important;
+  }
+  
+  .Working {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px;
+    background: #f9f9f9;
+  }
+  
+  .Working div {
+    text-align: center;
+    max-width: 250px;
+  }
+  
+  .Working img {
+    width: 60px;
+    margin-bottom: 15px;
+  }
+  
+  .Working h3 {
+    font-size: 1.5rem;
+    color: #333;
+  }
+  
+  .Working p {
+    font-size: 1rem;
+    color: #666;
+  }
+  .consult-container {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .page-title {
+    text-align: center;
+    color: #2c3e50;
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+  
+  .page-description {
+    text-align: center;
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 30px;
+  }
+  
+  /* Center the table on the page */
+  .schemes-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 100vh;
+    padding: 20px;
+    background-color: #f8f9fa;
+  }
+
+  /* Table styling */
+  .schemes-table {
+    width: 80%;
+    border-collapse: collapse;
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+  }
+
+  /* Table header */
+  .schemes-table th {
+    background-color: #003200;
+    color: white;
+    padding: 12px;
+    text-align: left;
+    font-size: 16px;
+  }
+
+  /* Table body */
+  .schemes-table td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+  }
+
+  /* Alternate row colors */
+  .schemes-table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+
+  /* Hover effect on rows */
+  .schemes-table tbody tr:hover {
+    background-color: #e9ecef;
+    transition: 0.3s;
+  }
+
+  /* Centering text in first column */
+  .schemes-table td:first-child {
+    text-align: center;
+    font-weight: bold;
+  }
+
+  /* Style for links */
+  .schemes-table a {
+    color: #003200;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  .schemes-table a:hover {
+    text-decoration: underline;
+  }
+
+  .experts-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .expert-card {
+    background: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-left: 4px solid #ff7f50;
+  }
+  
+  .expert-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+    
+  .expert-name {
+    font-size: 20px;
+    color: #2c3e50;
+    margin: 0;
+  }
+  
+  .expert-card p {
+    margin: 5px 0;
+    color: #555;
+  }
+  
+  .book-appointment {
+    display: block;
+    width: 100%;
+    background: #ff7f50;
+    color: white;
+    border: none;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+    border-radius: 5px;
+  }
+  
+  .book-appointment:hover {
+    background: #e86a3c;
+  }
+  
+  .back-button {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    text-decoration: none;
+    color: #ff7f50;
+    font-size: 16px;
+  }
+  
+  .back-button:hover {
+    text-decoration: underline;
+  }
+  .confirmation-message {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  
+  footer {
+    background: #333;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  footer div {
+    margin: 10px;
+  }
+  
+  footer a {
+    color: wheat;
+    text-decoration: none;
+  }
+  
+  footer a:hover {
+    text-decoration: underline;
+  }
+  

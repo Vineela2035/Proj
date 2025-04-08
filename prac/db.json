@@ -1,0 +1,526 @@
+{
+  "users": [
+    {
+      "firstName": "Rahul",
+      "lastName": "Sharma",
+      "contact": "rahul.sharma@example.com",
+      "userId": "rahul123",
+      "password": "Rahul@123",
+      "profile": {
+        "name": "",
+        "farmSize": "",
+        "location": "",
+        "experience": "",
+        "image": ""
+      },
+      "listings": [],
+      "orders": [],
+      "messages": []
+    },
+    {
+      "firstName": "Priya",
+      "lastName": "Verma",
+      "contact": "9876543210",
+      "userId": "priyaV",
+      "password": "Priya@456",
+      "profile": {
+        "name": "",
+        "farmSize": "",
+        "location": "",
+        "experience": "",
+        "image": ""
+      },
+      "listings": [],
+      "orders": [],
+      "messages": []
+    },
+    {
+      "firstName": "Amit",
+      "lastName": "Patel",
+      "contact": "amit.patel@example.com",
+      "userId": "amitp",
+      "password": "Amit@789",
+      "profile": {
+        "name": "",
+        "farmSize": "",
+        "location": "",
+        "experience": "",
+        "image": ""
+      },
+      "listings": [],
+      "orders": [],
+      "messages": []
+    }
+  ],"equipments": [],
+  "consultations": [
+    {
+      "name": "Suresh Kumar",
+      "question": "What is the best fertilizer for wheat farming?"
+    },
+    {
+      "name": "Meena Reddy",
+      "question": "How can I prevent pest attacks on my tomato plants?"
+    }
+  ],
+  "market": [
+    {
+      "category": "Fruits",
+      "commodities": [
+        {
+          "name": "Banana",
+          "varieties": [
+            { "name": "Nendra Bale", "max": 6000, "min": 5000, "modal": 5500 },
+            { "name": "Palayamthodan", "max": 2200, "min": 2000, "modal": 2000 },
+            { "name": "Rasakathai", "max": 5500, "min": 5000, "modal": 5000 },
+            { "name": "Robusta", "max": 5000, "min": 4500, "modal": 4700 },
+            { "name": "Grand Naine", "max": 5200, "min": 4800, "modal": 5000 }
+          ]
+        },
+        {
+          "name": "Pineapple",
+          "varieties": [
+            { "name": "Queen", "max": 7000, "min": 6500, "modal": 6800 },
+            { "name": "Kew", "max": 8000, "min": 7500, "modal": 7800 },
+            { "name": "Mauritius", "max": 7500, "min": 7000, "modal": 7300 },
+            { "name": "Smooth Cayenne", "max": 7700, "min": 7200, "modal": 7400 }
+          ]
+        },  {
+          "category": "Vegetables",
+          "commodities": [
+            {
+              "name": "Tomato",
+              "varieties": [
+                { "name": "Hybrid", "max": 2000, "min": 1800, "modal": 1900 },
+                { "name": "Desi", "max": 1800, "min": 1500, "modal": 1600 },
+                { "name": "Cherry Tomato", "max": 2500, "min": 2200, "modal": 2300 },
+                { "name": "Roma Tomato", "max": 2800, "min": 2400, "modal": 2600 }
+              ]
+            },
+            {
+              "name": "Carrot",
+              "varieties": [
+                { "name": "Ooty", "max": 5000, "min": 4500, "modal": 4800 },
+                { "name": "Delhi Red", "max": 5500, "min": 5000, "modal": 5200 },
+                { "name": "Nantes", "max": 5300, "min": 4800, "modal": 5000 },
+                { "name": "Imperator", "max": 5200, "min": 4700, "modal": 4900 }
+              ]
+            }
+          ]
+        },
+        {
+          "category": "Seeds",
+          "commodities": [
+            {
+              "name": "Mustard Seeds",
+              "varieties": [
+                { "name": "Black Mustard", "max": 7000, "min": 6500, "modal": 6800 },
+                { "name": "Yellow Mustard", "max": 7500, "min": 7000, "modal": 7200 },
+                { "name": "Brown Mustard", "max": 7200, "min": 6800, "modal": 7000 }
+              ]
+            },
+            {
+              "name": "Sesame Seeds",
+              "varieties": [
+                { "name": "White Sesame", "max": 8000, "min": 7500, "modal": 7700 },
+                { "name": "Black Sesame", "max": 9000, "min": 8500, "modal": 8800 },
+                { "name": "Brown Sesame", "max": 8500, "min": 8000, "modal": 8200 }
+              ]
+            }
+          ]
+        },
+        {
+          "category": "Cereals",
+          "commodities": [
+            {
+              "name": "Rice",
+              "varieties": [
+                { "name": "Basmati", "max": 12000, "min": 11000, "modal": 11500 },
+                { "name": "Sona Masuri", "max": 10000, "min": 9000, "modal": 9500 },
+                { "name": "Ponni", "max": 10500, "min": 9500, "modal": 9800 },
+                { "name": "Jasmine", "max": 13000, "min": 12000, "modal": 12500 }
+              ]
+            },
+            {
+              "name": "Wheat",
+              "varieties": [
+                { "name": "Durum Wheat", "max": 8500, "min": 8000, "modal": 8200 },
+                { "name": "Soft Wheat", "max": 9000, "min": 8500, "modal": 8800 },
+                { "name": "Hard Red Wheat", "max": 9500, "min": 9000, "modal": 9200 },
+                { "name": "White Wheat", "max": 8800, "min": 8300, "modal": 8500 }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "localProduce": [
+    {
+      "category": "Dairy",
+      "commodities": [
+        { "name": "Milk" },
+        { "name": "Cheese" },
+        { "name": "Yogurt" },
+        { "name": "Butter" },
+        { "name": "Ghee" },
+        { "name": "Paneer" },
+        { "name": "Curd" },
+        { "name": "Condensed Milk" },
+        { "name": "Cream" },
+        { "name": "Buttermilk" }
+      ]
+    },
+    {
+      "category": "Vegetables",
+      "commodities": [
+        { "name": "Carrot" },
+        { "name": "Spinach" },
+        { "name": "Cabbage" },
+        { "name": "Tomato" },
+        { "name": "Potato" },
+        { "name": "Onion" },
+        { "name": "Cauliflower" },
+        { "name": "Brinjal" },
+        { "name": "Capsicum" },
+        { "name": "Pumpkin" }
+      ]
+    },
+    {
+      "category": "Fruits",
+      "commodities": [
+        { "name": "Orange" },
+        { "name": "Pomegranate" },
+        { "name": "Papaya" },
+        { "name": "Apple" },
+        { "name": "Banana" },
+        { "name": "Mango" },
+        { "name": "Pineapple" },
+        { "name": "Grapes" },
+        { "name": "Watermelon" },
+        { "name": "Guava" }
+      ]
+    },
+    {
+      "category": "Grains",
+      "commodities": [
+        { "name": "Wheat" },
+        { "name": "Rice" },
+        { "name": "Barley" },
+        { "name": "Maize" },
+        { "name": "Millet" },
+        { "name": "Oats" },
+        { "name": "Sorghum" },
+        { "name": "Quinoa" },
+        { "name": "Rye" },
+        { "name": "Buckwheat" }
+      ]
+    },
+    {
+      "category": "Pulses",
+      "commodities": [
+        { "name": "Lentils" },
+        { "name": "Chickpeas" },
+        { "name": "Green Gram (Moong)" },
+        { "name": "Black Gram (Urad)" },
+        { "name": "Pigeon Pea (Toor Dal)" },
+        { "name": "Red Kidney Beans (Rajma)" },
+        { "name": "Black Eyed Peas (Lobia)" },
+        { "name": "Horse Gram" },
+        { "name": "Soybeans" },
+        { "name": "Peas" }
+      ]
+    },
+    {
+      "category": "Spices",
+      "commodities": [
+        { "name": "Turmeric" },
+        { "name": "Chili" },
+        { "name": "Coriander" },
+        { "name": "Cumin" },
+        { "name": "Cardamom" },
+        { "name": "Black Pepper" },
+        { "name": "Cloves" },
+        { "name": "Mustard Seeds" },
+        { "name": "Fenugreek" },
+        { "name": "Nutmeg" }
+      ]
+    }
+  ],
+  "schemes":[
+    {
+      "sr_no": 1,
+      "title": "Agriculture Infrastructure Fund",
+      "publish_date": "12-06-2024",
+      "details": "Download (341 KB) pdf",
+      "link": "https://agriwelfare.gov.in/Documents/AIF_Guidelines_English_12Jun24.pdf"
+    },
+    {
+      "sr_no": 2,
+      "title": "PM-Kisan Samman Nidhi",
+      "publish_date": "28-12-2023",
+      "details": "Link",
+      "link": "#"
+    },
+    {
+      "sr_no": 3,
+      "title": "ATMA",
+      "publish_date": "03-10-2018",
+      "details": "Download (1.17 MB) pdf",
+      "link": "https://agriwelfare.gov.in/Documents/ATMA-Guidelines%202018.pdf"
+    },
+    {
+      "sr_no": 4,
+      "title": "AGMARKNET",
+      "publish_date": "14-03-2014",
+      "details": "Download (1.03 MB) pdf",
+      "link": "https://agriwelfare.gov.in/Documents/Agmarknet_Guidelines.pdf"
+    },
+    {
+      "sr_no": 5,
+      "title": "Horticulture",
+      "publish_date": "05-04-2014",
+      "details": "Download (691.68 KB) pdf",
+      "link": "https://agriwelfare.gov.in/Documents/midh_Guidelines.pdf"
+    },
+    {
+      "sr_no": 6,
+      "title": "Online Pesticide Registration",
+      "publish_date": "23-09-2009",
+      "details": "Download (1.25 MB) pdf",
+      "link": "https://agriwelfare.gov.in/Documents/Pesticides_Registration.pdf"
+    },
+    {
+      "sr_no": 7,
+      "title": "Plant Quarantine Clearance",
+      "publish_date": "05-01-2011",
+      "details": "Download (8.89 MB) pdf",
+      "link": "https://agriwelfare.gov.in/Documents/Quarantine_Guidelinespdf.pdf"
+    },
+    {
+      "sr_no": 8,
+      "title": "DBT in Agriculture",
+      "publish_date": "12-05-2014",
+      "details": "Download (749.24 KB) pdf",
+      "link": "https://agriwelfare.gov.in/Documents/Guideline_DBTinAgriculture.pdf"
+    },
+    {
+      "sr_no": 9,
+      "title": "Pradhanmantri Krishi Sinchayee Yojana",
+      "publish_date": "06-05-2016",
+      "details": "Download (244.46 KB) pdf",
+      "link": "https://agriwelfare.gov.in/Documents/Guidelines_PMKSY.pdf"
+    },
+    {
+      "sr_no": 10,
+      "title": "Kisan Call Center",
+      "publish_date": "01-05-2015",
+      "details": "Link",
+      "link": "#"
+    },
+    {
+      "sr_no": 11,
+      "title": "mKisan",
+      "publish_date": "06-05-2015",
+      "details": "Link",
+      "link": "#"
+    },
+    {
+      "sr_no": 12,
+      "title": "Jaivik Kheti",
+      "publish_date": "18-05-2015",
+      "details": "Download (1.24 MB) pdf",
+      "link": "https://agriwelfare.gov.in/Documents/Jaivik_Kheti_Guidelines.pdf"
+    },
+    {
+      "sr_no": 13,
+      "title": "e-Nam",
+      "publish_date": "04-10-2016",
+      "details": "Download (459.07 KB) pdf",
+      "link": "https://agriwelfare.gov.in/Documents/Enamguidelines.pdf"
+    },
+    {
+      "sr_no": 14,
+      "title": "Soil Health Card",
+      "publish_date": "01-09-2016",
+      "details": "Download (1.1 MB) pdf",
+      "link": "https://agriwelfare.gov.in/Documents/Guidelines_Soil%20Health%20Card.pdf"
+    },
+    {
+      "sr_no": 15,
+      "title": "Pradhan Mantri Fasal Bima Yojana",
+      "publish_date": "05-08-2017",
+      "details": "Download (1.09 MB) pdf",
+      "link": "https://agriwelfare.gov.in/Documents/PMFBY_Guidelines.pdf"
+    }
+  ],"soilSamples": [
+    {
+      "id": 1,
+      "location": "Nandyal",
+      "pH": 6.5,
+      "nitrogen": 50,
+      "phosphorus": 20,
+      "potassium": 30,
+      "organicMatter": 2.5,
+      "recommendedCrop": "Wheat"
+    },
+    {
+      "id": 2,
+      "location": "Hyderabad",
+      "pH": 7.2,
+      "nitrogen": 40,
+      "phosphorus": 25,
+      "potassium": 35,
+      "organicMatter": 3.0,
+      "recommendedCrop": "Rice"
+    },
+    {
+      "id": 3,
+      "location": "Bangalore",
+      "pH": 6.8,
+      "nitrogen": 45,
+      "phosphorus": 22,
+      "potassium": 28,
+      "organicMatter": 2.8,
+      "recommendedCrop": "Corn"
+    },
+    {
+      "id": 4,
+      "location": "Pune",
+      "pH": 5.5,
+      "nitrogen": 60,
+      "phosphorus": 18,
+      "potassium": 25,
+      "organicMatter": 2.0,
+      "recommendedCrop": "Barley"
+    },
+    {
+      "id": 5,
+      "location": "Nagpur",
+      "pH": 6.2,
+      "nitrogen": 55,
+      "phosphorus": 21,
+      "potassium": 32,
+      "organicMatter": 2.7,
+      "recommendedCrop": "Millets"
+    },
+    {
+      "id": 6,
+      "location": "Chennai",
+      "pH": 7.0,
+      "nitrogen": 48,
+      "phosphorus": 23,
+      "potassium": 29,
+      "organicMatter": 2.9,
+      "recommendedCrop": "Sugarcane"
+    },
+    {
+      "id": 7,
+      "location": "Coimbatore",
+      "pH": 6.1,
+      "nitrogen": 52,
+      "phosphorus": 20,
+      "potassium": 27,
+      "organicMatter": 2.4,
+      "recommendedCrop": "Groundnut"
+    },
+    {
+      "id": 8,
+      "location": "Indore",
+      "pH": 6.9,
+      "nitrogen": 49,
+      "phosphorus": 19,
+      "potassium": 31,
+      "organicMatter": 2.6,
+      "recommendedCrop": "Soybean"
+    },
+    {
+      "id": 9,
+      "location": "Jaipur",
+      "pH": 5.8,
+      "nitrogen": 58,
+      "phosphorus": 24,
+      "potassium": 30,
+      "organicMatter": 2.1,
+      "recommendedCrop": "Cotton"
+    },
+    {
+      "id": 10,
+      "location": "Lucknow",
+      "pH": 7.3,
+      "nitrogen": 42,
+      "phosphorus": 26,
+      "potassium": 36,
+      "organicMatter": 3.2,
+      "recommendedCrop": "Paddy"
+    },
+    {
+      "id": 11,
+      "location": "Kolkata",
+      "pH": 6.4,
+      "nitrogen": 54,
+      "phosphorus": 22,
+      "potassium": 33,
+      "organicMatter": 2.7,
+      "recommendedCrop": "Jute"
+    },
+    {
+      "id": 12,
+      "location": "Bhopal",
+      "pH": 6.1,
+      "nitrogen": 50,
+      "phosphorus": 22,
+      "potassium": 28,
+      "organicMatter": 2.6,
+      "recommendedCrop": "Wheat"
+    },
+    {
+      "id": 13,
+      "location": "Vijayawada",
+      "pH": 6.7,
+      "nitrogen": 47,
+      "phosphorus": 19,
+      "potassium": 34,
+      "organicMatter": 2.8,
+      "recommendedCrop": "Chillies"
+    },
+    {
+      "id": 14,
+      "location": "Visakhapatnam",
+      "pH": 6.5,
+      "nitrogen": 50,
+      "phosphorus": 21,
+      "potassium": 30,
+      "organicMatter": 2.5,
+      "recommendedCrop": "Turmeric"
+    },
+    {
+      "id": 15,
+      "location": "Mysore",
+      "pH": 6.0,
+      "nitrogen": 57,
+      "phosphorus": 23,
+      "potassium": 29,
+      "organicMatter": 2.2,
+      "recommendedCrop": "Cardamom"
+    }
+  ],"faqs": [
+    { "id": 1, "question": "What is Agriserv?", "answer": "Agriserv is a platform for students to exchange knowledge, donate books, and rent equipment." },
+    { "id": 2, "question": "How can I provide my equipment sfor rent?", "answer": "Go to the 'Home Page' and in provide services section click register." },
+    { "id": 3, "question": "How does the equipment rental work?", "answer": "Users can list equipment for rent, and others can browse and rent them." },
+    { "id": 4, "question": "Is there a cost for using Agriserv?", "answer": "No, Agriserv is a free platform for students." },
+    { "id": 5, "question": "How do I earn points on Agriserv?", "answer": "You earn points by donating books and answering doubts in the discussion section." },
+    { "id": 6, "question": "Can I rent more than one piece of equipment?", "answer": "Yes, you can rent multiple equipment as per your requirement." },
+    { "id": 7, "question": "What is organic farming?", "answer": "Organic farming avoids synthetic fertilizers and pesticides, using natural methods instead." },
+    { "id": 8, "question": "How can I improve soil fertility?", "answer": "Use crop rotation, composting, and green manure to enhance soil fertility." },
+    { "id": 9, "question": "What are the best crops for dry regions?", "answer": "Crops like millet, sorghum, and chickpeas grow well in dry areas." },
+    { "id": 10, "question": "What is the best time to plant rice?", "answer": "Rice is best planted during the monsoon season for optimal growth." },
+    { "id": 11, "question": "What are the benefits of crop rotation?", "answer": "Crop rotation improves soil fertility, reduces pests, and enhances yield." },
+    { "id": 12, "question": "How does drip irrigation help in farming?", "answer": "Drip irrigation conserves water by delivering it directly to plant roots." },
+    { "id": 13, "question": "What are common pests in agriculture?", "answer": "Common pests include aphids, caterpillars, locusts, and beetles." },
+    { "id": 14, "question": "What is the difference between hybrid and heirloom seeds?", "answer": "Hybrid seeds are crossbred for traits, while heirloom seeds are passed down naturally." },
+    { "id": 15, "question": "How can I start a small organic farm?", "answer": "Begin with composting, crop rotation, and avoiding chemical fertilizers." },
+    { "id": 16, "question": "What is vertical farming?", "answer": "Vertical farming is a method of growing crops in stacked layers indoors." },
+    { "id": 17, "question": "How does precision farming work?", "answer": "Precision farming uses technology to optimize soil, water, and crop management." },
+    { "id": 18, "question": "What is permaculture?", "answer": "Permaculture is a sustainable way of farming that mimics natural ecosystems." }
+  ]  
+}

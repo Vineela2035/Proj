@@ -1,0 +1,67 @@
+/* Ensure the container only centers the form */
+.page-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full viewport height */
+  background-color: #e6f7e6; /* Light greenish background for a soft look */
+  position: relative;
+}
+
+/* Form container */
+.soil-testing-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  font-family: Arial, sans-serif;
+  width: 100%;
+  max-width: 450px; /* Ensure form width remains user-friendly */
+  background-color: #f4f4f4;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  position: absolute; /* Keeps the form centered without affecting the page layout */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Ensures exact centering */
+}
+
+/* Heading */
+h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Form styles */
+.soil-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+}
+
+.soil-form input {
+  padding: 12px;
+  font-size: 1.2rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+}
+
+/* Submit button */
+.soil-form button {
+  padding: 12px;
+  background-color: #003200;
+  color: white;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.soil-form button:hover {
+  background-color: #e1991d;
+}
